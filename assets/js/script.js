@@ -15,3 +15,11 @@ function getRobotById(id="009"){
         return robot.id === id
     });
 }
+console.log(getRobotById("019"));
+function getRobotBySeries (serie){
+    return robots.filter(function(robot){
+        return robot.series === series;
+    });
+}
+
+console.log(getRobotBySeries(3));
